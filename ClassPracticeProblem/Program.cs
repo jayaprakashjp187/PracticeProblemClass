@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("please choose what program u want");
-            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram");
+            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram\n6.PrimeNumberRange");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -47,6 +47,13 @@
                     int n= Convert.ToInt32(Console.ReadLine());
                     PrimeNumber k= new PrimeNumber();
                     k.checkingPrimeNumber(n);
+                    break;
+                case 6:
+                    Console.WriteLine("welcome to the prime number range program");
+                    Console.WriteLine("enter maximum number up to range the prime number");
+                    int maxNum=Convert.ToInt32(Console.ReadLine());
+                    PrimeNumberRange v = new PrimeNumberRange();
+                    v.checkingPrimeNumber(maxNum);
                     break;
 
 
