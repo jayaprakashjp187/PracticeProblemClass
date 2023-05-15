@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("please choose what program u want");
-            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram\n6.PrimeNumberRange");
+            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram\n6.PrimeNumberRange\n7.CheckingReverseOfWord\n8.fibonacciSeries");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -55,6 +55,20 @@
                     PrimeNumberRange v = new PrimeNumberRange();
                     v.checkingPrimeNumber(maxNum);
                     break;
+                case 7:
+                    Console.WriteLine("welcome to the reverse word program");
+                    Console.WriteLine("please enter a word ");
+                    string name= Console.ReadLine();
+                    ReverseWord.CheckingReverseWord(name);
+                    break;
+                case 8:
+                    Console.WriteLine("welcome to the fibonacci series program");
+                    Console.WriteLine("please enter how many elements of fibonacci series u want");
+                    int elements = Convert.ToInt32(Console.ReadLine());
+                    Fibonacci.CheckingFibonacci(elements);
+                    break;
+                 
+                   
 
 
 

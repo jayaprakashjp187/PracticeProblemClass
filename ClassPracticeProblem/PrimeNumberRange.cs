@@ -23,7 +23,7 @@ namespace ClassPracticeProblem
                 }
                 if (count == 2)
                 {
-                    Console.WriteLine("prime number in the range of 100's is " +i);
+                    Console.WriteLine("prime number in the range of max number is " +i);
                 }
             }
            
