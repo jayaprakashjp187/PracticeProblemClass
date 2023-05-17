@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("please choose what program u want");
-            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram\n6.PrimeNumberRange\n7.CheckingReverseOfWord\n8.fibonacciSeries");
+            Console.WriteLine("1.welcome message\n2.calculator program\n3.ReverseNumber\n4.PalandromeProgram\n5.PrimeNumberProgram\n6.PrimeNumberRange\n7.CheckingReverseOfWord\n8.fibonacciSeries\n9.ArrayProgram");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -66,6 +66,13 @@
                     Console.WriteLine("please enter how many elements of fibonacci series u want");
                     int elements = Convert.ToInt32(Console.ReadLine());
                     Fibonacci.CheckingFibonacci(elements);
+                    break;
+                case 9:
+                    Console.WriteLine("welcome to the array progrsm concept");
+                    Console.WriteLine("enter how many elements u want stored in a single variable");
+                    int arr= Convert.ToInt32(Console.ReadLine());   
+                    
+                    Array.StoringOfArrayNumbers(arr);
                     break;
                  
                    
